@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Form</title>
+  </head>
+  <body>
+    <form method="post" action="login">
+      <label for="Username">Username:</label>
+      <input
+        type="text"
+        name="Username"
+        id="Username"
+        placeholder="Your Full Name"
+        required
+      /><br /><br />
+      <label for="Password">Password:</label>
+      <input
+        type="password"
+        name="Password"
+        id="Password"
+        placeholder="Write your Password"
+        required
+      /><br /><br />
+      <label for="Mobile">Mobile:</label>
+      <input
+        type="tel"
+        name="Mobile"
+        id="Mobile"
+        pattern="[0-9 + ]{12}"
+        placeholder="Fill out your phone number please!"
+        required
+      /><br /><br />
+      <label for="Email">Email:</label>
+      <input
+        type="email"
+        name="Email"
+        id="Eamil"
+        placeholder="Your Adresse Email"
+        required
+      /><br /><br />
+      <label for="Subject">Subject:</label>
+      <textarea
+        name="Subject"
+        id="Subject"
+        cols="30"
+        rows="10"
+        placeholder="Write something.."
+        required
+      ></textarea
+      ><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Empty Form" />
+    </form>
+    <br />
+    <hr style="border: 2px solid #0c61ab" />
+    <br />
+    <form action="range">
+      <input
+        type="range"
+        min="0"
+        max="500"
+        step="50"
+        value="0"
+        style="height: 20px; color: #0c61ab"
+      />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
